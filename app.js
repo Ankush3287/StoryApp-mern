@@ -10,6 +10,10 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const app = express();
 
+//Body Parse
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 //Load config files
 dotenv.config({
   path: "./config/config.env",
@@ -53,6 +57,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //Routes
 app.use("/", require("./routes/index"));
 app.use("/auth", require("./routes/auth"));
+app.use("/stories", require("./routes/stories"));
 
 const PORT = process.env.PORT || 3000;
 

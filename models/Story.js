@@ -1,3 +1,5 @@
+//Whenever we are dealing with new resource in db we need a model for it
+
 const mongoose = require("mongoose");
 const StorySchema = new mongoose.Schema({
   title: {
