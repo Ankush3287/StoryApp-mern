@@ -4,7 +4,8 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image">
-
+          {{!-- ../user=> go out one level(out of each loop) and then take user --}}
+          {{{editIcon user ../user _id}}}
         </div>
         <div class="card-content center-align">
           {{! story.title }}

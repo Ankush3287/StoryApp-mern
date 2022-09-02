@@ -1,7 +1,7 @@
-<h6>dashboard</h6>
+<h6>Dashboard</h6>
 <h3>Welcome {{name}}</h3>
-<p>Here are your stories</p>
 {{#if stories}}
+  <p>Here are your stories</p>
   <table class="striped">
     <thead>
       <tr>
@@ -14,7 +14,7 @@
     <tbody>
       {{#each stories}}
         <tr>
-          <td><a href="/stories/{{__id}}"></a>{{title}}</td>
+          <td><a href="/stories/{{__id}}">{{title}}</a></td>
           <td>{{formatDate createdAt "MMMM Do YYYY, h:mm:ss a"}}</td>
           <td><span class="dash-status">{{status}}</span></td>
           <td></td>
