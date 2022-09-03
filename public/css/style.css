@@ -11,3 +11,19 @@ p {
 .fa-small {
   font-size: 16px !important;
 }
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+nav li .logout {
+  background-color: rgb(252, 125, 125);
+  border-radius: 8%;
+  margin-right: 170px;
+  margin-left: 18px;
+}
+
+.img-small {
+  width: 180px;
+}
