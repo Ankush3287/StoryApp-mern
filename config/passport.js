@@ -8,7 +8,7 @@ module.exports = function (passport) {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "https://story-app.up.railway.app/auth/google/callback",
+        callbackURL: "https://storyapp-mern.netlify.app/auth/google/callback",
       },
       async (accessToken, refreshToken, profile, done) => {
         const newUser = {
